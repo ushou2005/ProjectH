@@ -1,0 +1,90 @@
+Skip to content
+ 
+Search…
+All gists
+Back to GitHub
+@ushou2005 
+@turbott
+turbott/01 .gitignore Secret
+Created 2 years ago • Report abuse
+Code
+Revisions
+1
+<script src="https://gist.github.com/turbott/5a6f729633ea6171bf24043ef7c02f1a.js"></script>
+01 .gitignore
+# =============== #
+# Unity generated #
+# =============== #
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+UnityGenerated/
+/Assets/AssetStoreTools*
+*.pidb.meta
+
+
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+.vs/
+.consulo/
+ExportedObj/
+*.svd
+*.csproj
+*.pidb
+*.suo
+*.sln
+*.user
+*.unityproj
+*.userprefs
+*.booproj
+*.tmp
+*.pdb
+
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# ============ #
+# Build   #
+# ============ #
+*.html
+*.unity3d
+*.apk
+*.unitypackage
+
+# ============ #
+# for others   #
+# ============ #
+*.log #log files, for some plugins
+*.pyc #python bytecode cache, for some plugins.
+sysinfo.txt #Unity3D Generated File On Crash Reports
+@ushou2005
+ 
+Leave a comment
+ファイルが選択されていません
+Attach files by dragging & dropping, selecting or pasting them.
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
