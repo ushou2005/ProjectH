@@ -9,7 +9,7 @@ public class StatusPositionController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        transform.position = new Vector3(-8.88f, -0.25f, -0.1f);
+        transform.position = new Vector3(-8.76f, -0.26f, -0.1f);
     }
 
         // Update is called once per frame
