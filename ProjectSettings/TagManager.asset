@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Boy
   - Girl
+  - Ground
   layers:
   - Default
   - TransparentFX

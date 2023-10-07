@@ -6,6 +6,8 @@ public class PlayerController : MonoBehaviour
 {
     public GameObject boy;
     public GameObject girl;
+    bool isBoyJumping = false;
+    bool isGirlJumping = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,21 +17,43 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.J) && CompareTag("Boy"))
+        if (Input.GetKeyDown(KeyCode.J) && CompareTag("Boy") && !isBoyJumping)
         {
+            isBoyJumping = true;
             transform.position += new Vector3(0, 1, 0);
         }
-        if (Input.GetKeyDown(KeyCode.F) && CompareTag("Girl"))
-        {
+        if (Input.GetKeyDown(KeyCode.F) && CompareTag("Girl") && !isGirlJumping)
+         {
+            isGirlJumping = true;
             transform.position += new Vector3(0, 1, 0);
-        }
+         }
+        
     }
     public void BoyJumps()
     {
-        boy.transform.position += new Vector3(0, 1, 0);
+        if (!isBoyJumping)
+        {
+            isBoyJumping = true;
+            boy.transform.position += new Vector3(0, 1, 0);
+        }
     }
     public void GirlJumps()
     {
-        girl.transform.position += new Vector3(0, 1, 0);
+        if (!isGirlJumping)
+        {
+            isGirlJumping = true;
+            girl.transform.position += new Vector3(0, 1, 0);
+        }
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "Ground" && CompareTag("Boy"))
+        {
+            isBoyJumping = false;
+        }
+        if (collision.gameObject.tag == "Ground" && CompareTag("Girl"))
+        {
+            isGirlJumping = false;
+        }
     }
 }
