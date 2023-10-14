@@ -23,11 +23,21 @@ public class PlayerController : MonoBehaviour
             transform.position += new Vector3(0, 1, 0);
         }
         if (Input.GetKeyDown(KeyCode.F) && CompareTag("Girl") && !isGirlJumping)
-         {
+        {
             isGirlJumping = true;
             transform.position += new Vector3(0, 1, 0);
-         }
-        
+        }
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "Ground" && CompareTag("Boy"))
+        {
+            isBoyJumping = false;
+        }
+        if (collision.gameObject.tag == "Ground" && CompareTag("Girl"))
+        {
+            isGirlJumping = false;
+        }
     }
     public void BoyJumps()
     {
@@ -43,17 +53,6 @@ public class PlayerController : MonoBehaviour
         {
             isGirlJumping = true;
             girl.transform.position += new Vector3(0, 1, 0);
-        }
-    }
-    private void OnCollisionEnter(Collision collision)
-    {
-        if(collision.gameObject.tag == "Ground" && CompareTag("Boy"))
-        {
-            isBoyJumping = false;
-        }
-        if (collision.gameObject.tag == "Ground" && CompareTag("Girl"))
-        {
-            isGirlJumping = false;
         }
     }
 }
