@@ -385,7 +385,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5536f946c05894a8cb874b260debba94, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e327d4c65d30b4ad199a8eedc4f402b8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -422,7 +422,6 @@ GameObject:
   - component: {fileID: 300804667}
   - component: {fileID: 300804666}
   - component: {fileID: 300804665}
-  - component: {fileID: 300804668}
   m_Layer: 5
   m_Name: RightButton
   m_TagString: Untagged
@@ -493,7 +492,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 300804668}
+      - m_Target: {fileID: 947303658}
         m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
         m_MethodName: BoyJumps
         m_Mode: 1
@@ -543,20 +542,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 300804663}
   m_CullTransparentMesh: 1
---- !u!114 &300804668
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 300804663}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93457f3797bfd41dbbe4ca1b18eaeeec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  boy: {fileID: 947303653}
-  girl: {fileID: 1624845617}
 --- !u!1 &436573024
 GameObject:
   m_ObjectHideFlags: 0
@@ -711,7 +696,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5536f946c05894a8cb874b260debba94, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e327d4c65d30b4ad199a8eedc4f402b8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1125,8 +1110,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93457f3797bfd41dbbe4ca1b18eaeeec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boy: {fileID: 0}
-  girl: {fileID: 0}
+  boy: {fileID: 947303653}
+  girl: {fileID: 1624845617}
 --- !u!95 &947303659
 Animator:
   serializedVersion: 3
@@ -1253,7 +1238,6 @@ GameObject:
   - component: {fileID: 1564346858}
   - component: {fileID: 1564346857}
   - component: {fileID: 1564346856}
-  - component: {fileID: 1564346855}
   m_Layer: 5
   m_Name: LeftButton
   m_TagString: Untagged
@@ -1280,20 +1264,6 @@ RectTransform:
   m_AnchoredPosition: {x: -199, y: 0}
   m_SizeDelta: {x: 400, y: 452}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1564346855
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1564346853}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93457f3797bfd41dbbe4ca1b18eaeeec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  boy: {fileID: 947303653}
-  girl: {fileID: 1624845617}
 --- !u!114 &1564346856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1338,7 +1308,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1564346855}
+      - m_Target: {fileID: 1624845622}
         m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
         m_MethodName: GirlJumps
         m_Mode: 1
