@@ -385,7 +385,11 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+<<<<<<< HEAD
   m_Sprite: {fileID: 21300000, guid: 86bde6a950e494bdcad908f17050409f, type: 3}
+=======
+  m_Sprite: {fileID: 21300000, guid: 8d1e5aa67e32d4ce39a595086f939765, type: 3}
+>>>>>>> haru_createAnimation
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -422,7 +426,6 @@ GameObject:
   - component: {fileID: 300804667}
   - component: {fileID: 300804666}
   - component: {fileID: 300804665}
-  - component: {fileID: 300804668}
   m_Layer: 5
   m_Name: RightButton
   m_TagString: Untagged
@@ -543,6 +546,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 300804663}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
+=======
 --- !u!114 &300804668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -557,6 +562,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Gender: 7
   JumpPower: 0
+>>>>>>> main
 --- !u!1 &436573024
 GameObject:
   m_ObjectHideFlags: 0
@@ -627,7 +633,11 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+<<<<<<< HEAD
   m_Sprite: {fileID: 21300000, guid: 86bde6a950e494bdcad908f17050409f, type: 3}
+=======
+  m_Sprite: {fileID: 21300000, guid: 8d1e5aa67e32d4ce39a595086f939765, type: 3}
+>>>>>>> haru_createAnimation
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -711,7 +721,11 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+<<<<<<< HEAD
   m_Sprite: {fileID: 21300000, guid: 86bde6a950e494bdcad908f17050409f, type: 3}
+=======
+  m_Sprite: {fileID: 21300000, guid: 8d1e5aa67e32d4ce39a595086f939765, type: 3}
+>>>>>>> haru_createAnimation
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -872,7 +886,11 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+<<<<<<< HEAD
   m_Sprite: {fileID: 21300000, guid: 86bde6a950e494bdcad908f17050409f, type: 3}
+=======
+  m_Sprite: {fileID: 21300000, guid: 8d1e5aa67e32d4ce39a595086f939765, type: 3}
+>>>>>>> haru_createAnimation
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1009,9 +1027,16 @@ GameObject:
   - component: {fileID: 947303655}
   - component: {fileID: 947303654}
   - component: {fileID: 947303658}
+<<<<<<< HEAD
+  - component: {fileID: 947303659}
+=======
   - component: {fileID: 947303657}
   - component: {fileID: 947303656}
+<<<<<<< HEAD
   - component: {fileID: 947303659}
+=======
+>>>>>>> main
+>>>>>>> haru_createAnimation
   m_Layer: 0
   m_Name: boy
   m_TagString: Boy
@@ -1125,8 +1150,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93457f3797bfd41dbbe4ca1b18eaeeec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
+  boy: {fileID: 947303653}
+  girl: {fileID: 1624845617}
+--- !u!95 &947303659
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 947303653}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8e8284e65724543428198a0391d467dd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+=======
   Gender: 0
   JumpPower: 6
+<<<<<<< HEAD
 --- !u!95 &947303659
 Animator:
   serializedVersion: 3
@@ -1146,6 +1195,9 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+=======
+>>>>>>> main
+>>>>>>> haru_createAnimation
 --- !u!1 &1322379453
 GameObject:
   m_ObjectHideFlags: 0
@@ -1197,7 +1249,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 130b56de73d154f5ba1c57d7b273a814, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1253,7 +1305,6 @@ GameObject:
   - component: {fileID: 1564346858}
   - component: {fileID: 1564346857}
   - component: {fileID: 1564346856}
-  - component: {fileID: 1564346855}
   m_Layer: 5
   m_Name: LeftButton
   m_TagString: Untagged
@@ -1280,6 +1331,8 @@ RectTransform:
   m_AnchoredPosition: {x: -199, y: 0}
   m_SizeDelta: {x: 400, y: 452}
   m_Pivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
+=======
 --- !u!114 &1564346855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1294,6 +1347,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Gender: 7
   JumpPower: 0
+>>>>>>> main
 --- !u!114 &1564346856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1401,7 +1455,15 @@ GameObject:
   - component: {fileID: 1624845622}
   - component: {fileID: 1624845619}
   - component: {fileID: 1624845618}
+<<<<<<< HEAD
   - component: {fileID: 1624845623}
+=======
+<<<<<<< HEAD
+  - component: {fileID: 1624845622}
+  - component: {fileID: 1624845623}
+=======
+>>>>>>> main
+>>>>>>> haru_createAnimation
   m_Layer: 0
   m_Name: girl
   m_TagString: Girl
@@ -1515,8 +1577,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93457f3797bfd41dbbe4ca1b18eaeeec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
+  boy: {fileID: 947303653}
+  girl: {fileID: 1624845617}
+--- !u!95 &1624845623
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624845617}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8e8284e65724543428198a0391d467dd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+=======
   Gender: 1
   JumpPower: 6
+<<<<<<< HEAD
 --- !u!95 &1624845623
 Animator:
   serializedVersion: 3
@@ -1536,6 +1622,9 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+=======
+>>>>>>> main
+>>>>>>> haru_createAnimation
 --- !u!1 &1811660632
 GameObject:
   m_ObjectHideFlags: 0
@@ -1862,7 +1951,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 130b56de73d154f5ba1c57d7b273a814, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

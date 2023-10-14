@@ -35,7 +35,30 @@ public class PlayerController : MonoBehaviour
                 isJumping = true;
             }
         }
+<<<<<<< HEAD
+        if (Input.GetKeyDown(KeyCode.F) && CompareTag("Girl") && !isGirlJumping)
+        {
+            isGirlJumping = true;
+            transform.position += new Vector3(0, 1, 0);
+        }
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "Ground" && CompareTag("Boy"))
+        {
+            isBoyJumping = false;
+        }
+        if (collision.gameObject.tag == "Ground" && CompareTag("Girl"))
+        {
+            isGirlJumping = false;
+        }
+    }
+    public void BoyJumps()
+    {
+        if (!isBoyJumping)
+=======
         if (Gender == 1)
+>>>>>>> main
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
@@ -56,6 +79,8 @@ public class PlayerController : MonoBehaviour
         rb.AddForce(Vector3.up * JumpPower,ForceMode.VelocityChange);
         isJumping = true;
     }
+<<<<<<< HEAD
+=======
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Ground")
@@ -63,4 +88,5 @@ public class PlayerController : MonoBehaviour
             isJumping = false;
         }
     }
+>>>>>>> main
 }

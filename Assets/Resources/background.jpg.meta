@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 86bde6a950e494bdcad908f17050409f
+=======
+guid: 8d1e5aa67e32d4ce39a595086f939765
+>>>>>>> haru_createAnimation
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
