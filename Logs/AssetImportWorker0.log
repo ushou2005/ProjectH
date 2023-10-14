@@ -12,39 +12,66 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
+<<<<<<< HEAD
 53326
 Successfully changed project path to: /Users/tsukadaharuna/ProjectH
 /Users/tsukadaharuna/ProjectH
 Using Asset Import Pipeline V2.
 Refreshing native plugins compatible for Editor in 32.59 ms, found 2 plugins.
+=======
+53788
+Successfully changed project path to: /Users/tsukadaharuna/ProjectH
+/Users/tsukadaharuna/ProjectH
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 34.42 ms, found 2 plugins.
+>>>>>>> main
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.3f1 (8ff31bc5bf5b)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.2.3f1/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Users/tsukadaharuna/ProjectH/Assets
 GfxDevice: creating device client; threaded=0
+<<<<<<< HEAD
 2023-10-14 23:00:25.287 Unity[5660:212642] (null) preferred device: Apple M1 (high power)
 2023-10-14 23:00:25.287 Unity[5660:212642] Metal devices available: 1
 2023-10-14 23:00:25.287 Unity[5660:212642] 0: Apple M1 (high power)
 2023-10-14 23:00:25.287 Unity[5660:212642] Using device Apple M1 (high power)
+=======
+2023-10-14 23:37:19.652 Unity[7284:240977] (null) preferred device: Apple M1 (high power)
+2023-10-14 23:37:19.652 Unity[7284:240977] Metal devices available: 1
+2023-10-14 23:37:19.652 Unity[7284:240977] 0: Apple M1 (high power)
+2023-10-14 23:37:19.652 Unity[7284:240977] Using device Apple M1 (high power)
+>>>>>>> main
 Initializing Metal device caps: Apple M1
 Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2020.2.3f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2020.2.3f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = '/Applications/Unity/Hub/Editor/2020.2.3f1/Unity.app/Contents/MonoBleedingEdge/etc'
+<<<<<<< HEAD
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56660
+=======
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56284
+>>>>>>> main
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2020.2.3f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2020.2.3f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+<<<<<<< HEAD
 Registered in 0.001330 seconds.
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 34.10 ms, found 2 plugins.
+=======
+Registered in 0.001975 seconds.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 33.27 ms, found 2 plugins.
+>>>>>>> main
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
+<<<<<<< HEAD
 - Completed reload, in  2.495 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
@@ -53,16 +80,31 @@ Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 34.99 ms, found 2 plugins.
+=======
+- Completed reload, in  2.386 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001282 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 33.93 ms, found 2 plugins.
+>>>>>>> main
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
+<<<<<<< HEAD
 - Completed reload, in  1.615 seconds
+=======
+- Completed reload, in  1.553 seconds
+>>>>>>> main
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launching external process: /Applications/Unity/Hub/Editor/2020.2.3f1/Unity.app/Contents/Tools/UnityShaderCompiler
+<<<<<<< HEAD
 Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
 Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
@@ -87,20 +129,47 @@ Received Import Request.
   artifactKey: Guid(8e8284e65724543428198a0391d467dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Animation/boy.controller using Guid(8e8284e65724543428198a0391d467dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0beffc70da8309c586680580bded136b') in 0.063288 seconds
   Import took 0.065883 seconds .
+=======
+Launched and connected shader compiler UnityShaderCompiler after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.37 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1795 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 77.6 MB.
+System memory in use after: 77.7 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2242.
+Total: 1.589583 ms (FindLiveObjects: 0.165167 ms CreateObjectMapping: 0.039167 ms MarkObjects: 1.294541 ms  DeleteObjects: 0.085500 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Resources/background05.jpg
+  artifactKey: Guid(5536f946c05894a8cb874b260debba94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/background05.jpg using Guid(5536f946c05894a8cb874b260debba94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be6c359275d15cbb068a0f266ad9e218') in 0.234370 seconds
+  Import took 0.237379 seconds .
+>>>>>>> main
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< HEAD
 Registered in 0.001171 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
+=======
+Registered in 0.001160 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
+>>>>>>> main
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
+<<<<<<< HEAD
 - Completed reload, in  1.532 seconds
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.30 ms, found 2 plugins.
@@ -391,4 +460,16 @@ System memory in use after: 413.6 MB.
 
 Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2302.
 Total: 1.436667 ms (FindLiveObjects: 0.143708 ms CreateObjectMapping: 0.037708 ms MarkObjects: 1.233500 ms  DeleteObjects: 0.020833 ms)
+=======
+- Completed reload, in  1.525 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.30 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1785 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 159.1 MB.
+System memory in use after: 159.2 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2251.
+Total: 2.209667 ms (FindLiveObjects: 0.122167 ms CreateObjectMapping: 0.035708 ms MarkObjects: 2.031500 ms  DeleteObjects: 0.019167 ms)
+>>>>>>> main
 

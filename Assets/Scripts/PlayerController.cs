@@ -1,27 +1,41 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Analytics;
 
+/// <summary>
+/// プレイヤーの動きを制御するスクリプト
+/// </summary>
 public class PlayerController : MonoBehaviour
 {
-    public GameObject boy;
-    public GameObject girl;
-    bool isBoyJumping = false;
-    bool isGirlJumping = false;
+    [SerializeField] float Gender; //boyとgirlを判別する変数　0:boy　1:girl
+    [SerializeField] float JumpPower; //ジャンプ力
+
+    Rigidbody rb;
+
+    private bool isJumping; //ジャンプ中を判定する
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (Gender >= 3) return;
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.J) && CompareTag("Boy") && !isBoyJumping)
+        if (Gender >= 3) return;
+        if (isJumping) return;
+        if (Gender == 0)
         {
-            isBoyJumping = true;
-            transform.position += new Vector3(0, 1, 0);
+            if (Input.GetKeyDown(KeyCode.J))
+            {
+                BoyJump();
+                isJumping = true;
+            }
         }
+<<<<<<< HEAD
         if (Input.GetKeyDown(KeyCode.F) && CompareTag("Girl") && !isGirlJumping)
         {
             isGirlJumping = true;
@@ -42,17 +56,37 @@ public class PlayerController : MonoBehaviour
     public void BoyJumps()
     {
         if (!isBoyJumping)
+=======
+        if (Gender == 1)
+>>>>>>> main
         {
-            isBoyJumping = true;
-            boy.transform.position += new Vector3(0, 1, 0);
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                GirlJump();
+                isJumping = true;
+            }
         }
     }
-    public void GirlJumps()
+    public void BoyJump()
+    {      
+        if (isJumping) return;
+        rb.AddForce(Vector3.up * JumpPower, ForceMode.VelocityChange);
+        isJumping = true;
+    }
+   public void GirlJump() 
     {
-        if (!isGirlJumping)
+        if (isJumping) return;
+        rb.AddForce(Vector3.up * JumpPower,ForceMode.VelocityChange);
+        isJumping = true;
+    }
+<<<<<<< HEAD
+=======
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Ground")
         {
-            isGirlJumping = true;
-            girl.transform.position += new Vector3(0, 1, 0);
+            isJumping = false;
         }
     }
+>>>>>>> main
 }
