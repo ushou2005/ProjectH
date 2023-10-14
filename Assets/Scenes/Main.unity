@@ -493,9 +493,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 300804668}
+      - m_Target: {fileID: 947303658}
         m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
-        m_MethodName: BoyJumps
+        m_MethodName: BoyJump
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -555,8 +555,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93457f3797bfd41dbbe4ca1b18eaeeec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boy: {fileID: 947303653}
-  girl: {fileID: 1624845617}
+  Gender: 7
+  JumpPower: 0
 --- !u!1 &436573024
 GameObject:
   m_ObjectHideFlags: 0
@@ -1008,9 +1008,9 @@ GameObject:
   m_Component:
   - component: {fileID: 947303655}
   - component: {fileID: 947303654}
-  - component: {fileID: 947303656}
-  - component: {fileID: 947303657}
   - component: {fileID: 947303658}
+  - component: {fileID: 947303657}
+  - component: {fileID: 947303656}
   m_Layer: 0
   m_Name: boy
   m_TagString: Boy
@@ -1097,7 +1097,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!65 &947303657
 BoxCollider:
@@ -1110,8 +1110,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 4.1, z: 0.2}
-  m_Center: {x: 0, y: 0.08, z: 0}
+  m_Size: {x: 3.32, y: 3.77, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &947303658
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1124,8 +1124,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93457f3797bfd41dbbe4ca1b18eaeeec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boy: {fileID: 0}
-  girl: {fileID: 0}
+  Gender: 0
+  JumpPower: 6
 --- !u!1 &1322379453
 GameObject:
   m_ObjectHideFlags: 0
@@ -1272,8 +1272,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93457f3797bfd41dbbe4ca1b18eaeeec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boy: {fileID: 947303653}
-  girl: {fileID: 1624845617}
+  Gender: 7
+  JumpPower: 0
 --- !u!114 &1564346856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1318,9 +1318,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1564346855}
+      - m_Target: {fileID: 1624845622}
         m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
-        m_MethodName: GirlJumps
+        m_MethodName: GirlJump
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1378,9 +1378,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1624845621}
   - component: {fileID: 1624845620}
+  - component: {fileID: 1624845622}
   - component: {fileID: 1624845619}
   - component: {fileID: 1624845618}
-  - component: {fileID: 1624845622}
   m_Layer: 0
   m_Name: girl
   m_TagString: Girl
@@ -1388,20 +1388,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &1624845618
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1624845617}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.5, y: 4.1, z: 0.2}
-  m_Center: {x: 0, y: 0.08, z: 0}
---- !u!54 &1624845619
+--- !u!54 &1624845618
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1415,8 +1402,21 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!65 &1624845619
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624845617}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.05, y: 3.85, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!212 &1624845620
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1494,8 +1494,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93457f3797bfd41dbbe4ca1b18eaeeec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boy: {fileID: 947303653}
-  girl: {fileID: 1624845617}
+  Gender: 1
+  JumpPower: 6
 --- !u!1 &1811660632
 GameObject:
   m_ObjectHideFlags: 0
