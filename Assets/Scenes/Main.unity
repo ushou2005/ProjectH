@@ -385,7 +385,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5536f946c05894a8cb874b260debba94, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 86bde6a950e494bdcad908f17050409f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -627,7 +627,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5536f946c05894a8cb874b260debba94, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 86bde6a950e494bdcad908f17050409f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -711,7 +711,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5536f946c05894a8cb874b260debba94, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 86bde6a950e494bdcad908f17050409f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -872,7 +872,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5536f946c05894a8cb874b260debba94, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 86bde6a950e494bdcad908f17050409f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1011,6 +1011,7 @@ GameObject:
   - component: {fileID: 947303658}
   - component: {fileID: 947303657}
   - component: {fileID: 947303656}
+  - component: {fileID: 947303659}
   m_Layer: 0
   m_Name: boy
   m_TagString: Boy
@@ -1126,6 +1127,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Gender: 0
   JumpPower: 6
+--- !u!95 &947303659
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 947303653}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bae30744f9c6e4d20b2bae82076eb027, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1322379453
 GameObject:
   m_ObjectHideFlags: 0
@@ -1381,6 +1401,7 @@ GameObject:
   - component: {fileID: 1624845622}
   - component: {fileID: 1624845619}
   - component: {fileID: 1624845618}
+  - component: {fileID: 1624845623}
   m_Layer: 0
   m_Name: girl
   m_TagString: Girl
@@ -1496,6 +1517,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Gender: 1
   JumpPower: 6
+--- !u!95 &1624845623
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624845617}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bae30744f9c6e4d20b2bae82076eb027, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1811660632
 GameObject:
   m_ObjectHideFlags: 0
