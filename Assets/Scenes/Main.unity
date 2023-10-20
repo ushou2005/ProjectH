@@ -385,11 +385,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-<<<<<<< HEAD
-  m_Sprite: {fileID: 21300000, guid: 86bde6a950e494bdcad908f17050409f, type: 3}
-=======
   m_Sprite: {fileID: 21300000, guid: 8d1e5aa67e32d4ce39a595086f939765, type: 3}
->>>>>>> haru_createAnimation
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -397,7 +393,7 @@ SpriteRenderer:
   m_Size: {x: 20.48, y: 5.84}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &278819461
@@ -498,7 +494,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 947303658}
         m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
-        m_MethodName: BoyJump
+        m_MethodName: BoyJumps
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -546,23 +542,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 300804663}
   m_CullTransparentMesh: 1
-<<<<<<< HEAD
-=======
---- !u!114 &300804668
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 300804663}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93457f3797bfd41dbbe4ca1b18eaeeec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Gender: 7
-  JumpPower: 0
->>>>>>> main
 --- !u!1 &436573024
 GameObject:
   m_ObjectHideFlags: 0
@@ -633,11 +612,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-<<<<<<< HEAD
-  m_Sprite: {fileID: 21300000, guid: 86bde6a950e494bdcad908f17050409f, type: 3}
-=======
-  m_Sprite: {fileID: 21300000, guid: 8d1e5aa67e32d4ce39a595086f939765, type: 3}
->>>>>>> haru_createAnimation
+  m_Sprite: {fileID: 21300000, guid: 1b5bed00385a14d82866ce4a2fb4180a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -721,11 +696,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-<<<<<<< HEAD
-  m_Sprite: {fileID: 21300000, guid: 86bde6a950e494bdcad908f17050409f, type: 3}
-=======
-  m_Sprite: {fileID: 21300000, guid: 8d1e5aa67e32d4ce39a595086f939765, type: 3}
->>>>>>> haru_createAnimation
+  m_Sprite: {fileID: 21300000, guid: 1b5bed00385a14d82866ce4a2fb4180a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -886,11 +857,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-<<<<<<< HEAD
-  m_Sprite: {fileID: 21300000, guid: 86bde6a950e494bdcad908f17050409f, type: 3}
-=======
   m_Sprite: {fileID: 21300000, guid: 8d1e5aa67e32d4ce39a595086f939765, type: 3}
->>>>>>> haru_createAnimation
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -898,7 +865,7 @@ SpriteRenderer:
   m_Size: {x: 20.48, y: 5.84}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &869482777
@@ -1026,17 +993,10 @@ GameObject:
   m_Component:
   - component: {fileID: 947303655}
   - component: {fileID: 947303654}
-  - component: {fileID: 947303658}
-<<<<<<< HEAD
-  - component: {fileID: 947303659}
-=======
-  - component: {fileID: 947303657}
   - component: {fileID: 947303656}
-<<<<<<< HEAD
+  - component: {fileID: 947303657}
+  - component: {fileID: 947303658}
   - component: {fileID: 947303659}
-=======
->>>>>>> main
->>>>>>> haru_createAnimation
   m_Layer: 0
   m_Name: boy
   m_TagString: Boy
@@ -1123,7 +1083,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!65 &947303657
 BoxCollider:
@@ -1136,8 +1096,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.32, y: 3.77, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.5, y: 4.1, z: 0.2}
+  m_Center: {x: 0, y: 0.08, z: 0}
 --- !u!114 &947303658
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1150,9 +1110,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93457f3797bfd41dbbe4ca1b18eaeeec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  boy: {fileID: 947303653}
-  girl: {fileID: 1624845617}
+  Gender: 0
+  JumpPower: 0
 --- !u!95 &947303659
 Animator:
   serializedVersion: 3
@@ -1172,32 +1131,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
-=======
-  Gender: 0
-  JumpPower: 6
-<<<<<<< HEAD
---- !u!95 &947303659
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 947303653}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: bae30744f9c6e4d20b2bae82076eb027, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
-=======
->>>>>>> main
->>>>>>> haru_createAnimation
 --- !u!1 &1322379453
 GameObject:
   m_ObjectHideFlags: 0
@@ -1331,23 +1264,6 @@ RectTransform:
   m_AnchoredPosition: {x: -199, y: 0}
   m_SizeDelta: {x: 400, y: 452}
   m_Pivot: {x: 0.5, y: 0.5}
-<<<<<<< HEAD
-=======
---- !u!114 &1564346855
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1564346853}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93457f3797bfd41dbbe4ca1b18eaeeec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Gender: 7
-  JumpPower: 0
->>>>>>> main
 --- !u!114 &1564346856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1394,7 +1310,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1624845622}
         m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
-        m_MethodName: GirlJump
+        m_MethodName: GirlJumps
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1452,18 +1368,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1624845621}
   - component: {fileID: 1624845620}
-  - component: {fileID: 1624845622}
   - component: {fileID: 1624845619}
   - component: {fileID: 1624845618}
-<<<<<<< HEAD
-  - component: {fileID: 1624845623}
-=======
-<<<<<<< HEAD
   - component: {fileID: 1624845622}
   - component: {fileID: 1624845623}
-=======
->>>>>>> main
->>>>>>> haru_createAnimation
   m_Layer: 0
   m_Name: girl
   m_TagString: Girl
@@ -1471,7 +1379,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!54 &1624845618
+--- !u!65 &1624845618
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624845617}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.5, y: 4.1, z: 0.2}
+  m_Center: {x: 0, y: 0.08, z: 0}
+--- !u!54 &1624845619
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1485,21 +1406,8 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &1624845619
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1624845617}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.05, y: 3.85, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!212 &1624845620
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1577,9 +1485,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93457f3797bfd41dbbe4ca1b18eaeeec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  boy: {fileID: 947303653}
-  girl: {fileID: 1624845617}
+  Gender: 0
+  JumpPower: 0
 --- !u!95 &1624845623
 Animator:
   serializedVersion: 3
@@ -1599,32 +1506,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
-=======
-  Gender: 1
-  JumpPower: 6
-<<<<<<< HEAD
---- !u!95 &1624845623
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1624845617}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: bae30744f9c6e4d20b2bae82076eb027, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
-=======
->>>>>>> main
->>>>>>> haru_createAnimation
 --- !u!1 &1811660632
 GameObject:
   m_ObjectHideFlags: 0
