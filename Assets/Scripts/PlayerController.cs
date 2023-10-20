@@ -4,9 +4,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Analytics;
 
-/// <summary>
-/// ?v???C???[?????????????????X?N???v?g
-/// </summary>
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] float Gender; //boy??girl???????????????@0:boy?@1:girl
@@ -31,28 +28,30 @@ public class PlayerController : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.J))
             {
-                BoyJump();
+                BoyJumps();
                 isJumping = true;
             }
             if (Input.GetKeyDown(KeyCode.F))
             {
-                GirlJump();
+                GirlJumps();
                 isJumping = true;
             }
         }
         
     }
-    public void BoyJump()
+    public void BoyJumps()
     {      
         if (isJumping) return;
         rb.AddForce(Vector3.up * JumpPower, ForceMode.VelocityChange);
         isJumping = true;
     }
-   public void GirlJump() 
+   public void GirlJumps() 
     {
         if (isJumping) return;
         rb.AddForce(Vector3.up * JumpPower,ForceMode.VelocityChange);
         isJumping = true;
+
+        Debug.Log("girlJumps");
     }
     private void OnCollisionEnter(Collision collision)
     {
