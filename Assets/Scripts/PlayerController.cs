@@ -50,8 +50,6 @@ public class PlayerController : MonoBehaviour
         if (isJumping) return;
         rb.AddForce(Vector3.up * JumpPower,ForceMode.VelocityChange);
         isJumping = true;
-
-        Debug.Log("girlJumps");
     }
     private void OnCollisionEnter(Collision collision)
     {

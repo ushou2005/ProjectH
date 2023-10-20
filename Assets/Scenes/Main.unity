@@ -1111,7 +1111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Gender: 0
-  JumpPower: 0
+  JumpPower: 5
 --- !u!95 &947303659
 Animator:
   serializedVersion: 3
@@ -1486,7 +1486,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Gender: 0
-  JumpPower: 0
+  JumpPower: 5
 --- !u!95 &1624845623
 Animator:
   serializedVersion: 3
