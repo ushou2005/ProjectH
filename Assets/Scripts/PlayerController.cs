@@ -6,12 +6,12 @@ using UnityEngine.Analytics;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] float Gender; //boy??girl???????????????@0:boy?@1:girl
-    [SerializeField] float JumpPower; //?W?????v??
+    [SerializeField] float Gender; 
+    [SerializeField] float JumpPower;
 
     Rigidbody rb;
 
-    private bool isJumping; //?W?????v????????????
+    private bool isJumping; 
     // Start is called before the first frame update
     void Start()
     {
@@ -22,22 +22,21 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Gender >= 3) return;
-        if (isJumping) return;
         if (Gender == 0)
         {
             if (Input.GetKeyDown(KeyCode.J))
             {
                 BoyJumps();
-                isJumping = true;
             }
+        }
+        if (Gender == 1)
+        {
             if (Input.GetKeyDown(KeyCode.F))
             {
                 GirlJumps();
-                isJumping = true;
             }
         }
-        
+       
     }
     public void BoyJumps()
     {      
