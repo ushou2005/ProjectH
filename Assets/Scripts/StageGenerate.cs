@@ -9,7 +9,7 @@ public class StageGenerate : MonoBehaviour
 
     [SerializeField] Vector3 GeneratePos;
 
-    int[] array = {0,0,0,0,0,0,0,0,0,2};
+    int[] array = {0,1,0,1,0,1,0,1,0,0,0,0};
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +19,7 @@ public class StageGenerate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        for (int i = 0; i < 9; i++)
+        for (int i = 0; i < array.Length; i++)
         {
             Debug.Log(i);
             GeneratePos.x += 16.2f;
@@ -31,8 +31,10 @@ public class StageGenerate : MonoBehaviour
             {
                 Instantiate(Hole, GeneratePos, Quaternion.identity);
             }
-            else break;
-            
+            if (i == array.Length)
+            {
+                break;
+            }
         }
     }
 }
