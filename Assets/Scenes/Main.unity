@@ -2669,7 +2669,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Ground: {fileID: 8189652358537604837, guid: be568180626c4924eaa2e34b8958899d, type: 3}
   Hole: {fileID: 7962617723867408, guid: cbdb7ea8b9c0f474093a0bb68079d2a5, type: 3}
-  GeneratePos: {x: -6.15, y: 2.29, z: 0}
+  GeneratePos: {x: -6.2, y: 2.29, z: 0}
 --- !u!1 &1564346853
 GameObject:
   m_ObjectHideFlags: 0
@@ -3904,6 +3904,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7337132440578748601, guid: be568180626c4924eaa2e34b8958899d, type: 3}
+      propertyPath: ScrollSpeed
+      value: 4.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8189652356672273637, guid: be568180626c4924eaa2e34b8958899d, type: 3}
       propertyPath: m_Sprite
       value: 
