@@ -15,7 +15,7 @@ public class ScrollScript : MonoBehaviour
     void Update()
     {
         transform.position += new Vector3(-ScrollSpeed * Time.deltaTime, 0, 0);
-        if (transform.position.x < -10)
+        if (transform.position.x < -50)
         {
             Destroy(this.gameObject);
         }
