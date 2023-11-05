@@ -13,12 +13,6 @@ public class StageGenerate : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
         for (int i = 0; i < array.Length; i++)
         {
             Debug.Log(i);
@@ -36,5 +30,11 @@ public class StageGenerate : MonoBehaviour
                 break;
             }
         }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
     }
 }
