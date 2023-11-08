@@ -6,6 +6,7 @@ public class StageGenerate : MonoBehaviour
 {
     [SerializeField] GameObject Ground;
     [SerializeField] GameObject Hole;
+    [SerializeField] GameObject Hole2;
 
     [SerializeField] Vector3 GeneratePos;
 
@@ -24,6 +25,10 @@ public class StageGenerate : MonoBehaviour
             if (array[i] == 1)
             {
                 Instantiate(Hole, GeneratePos, Quaternion.identity);
+            }
+            if (array[i] == 2)
+            {
+                Instantiate(Hole2, GeneratePos, Quaternion.identity);
             }
             if (i == array.Length)
             {
