@@ -10,7 +10,7 @@ public class StageGenerate : MonoBehaviour
 
     [SerializeField] Vector3 GeneratePos;
 
-    int[] array = {0,1,0,1,0,1,0,1,0,0,0,0};
+    [SerializeField]int[] array = {0,1,0,1,0,1,0,1,0,0,0,0};
     // Start is called before the first frame update
     void Start()
     {
