@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        DetectJump();
+        //DetectJump();
         if (Gender == 0)
         {
             if (Input.GetKeyDown(KeyCode.J))
@@ -38,7 +38,7 @@ public class PlayerController : MonoBehaviour
                 GirlJumps();
             }
         }
-        Debug.DrawLine(transform.position,transform.position - transform.up * 1,color:Color.white);
+        //Debug.DrawLine(transform.position,transform.position - transform.up * 1,color:Color.white);
     }
     public void BoyJumps()
     {      
@@ -50,24 +50,25 @@ public class PlayerController : MonoBehaviour
         if (isJumping) return;
         rb.AddForce(Vector3.up * JumpPower,ForceMode.VelocityChange);
     }
-    void DetectJump()
+    //void DetectJump()
+    //{
+    //    isJumping = Physics2D.Linecast(transform.position,transform.position - transform.up * 0.001f,Ground);
+    //}
+    private void OnCollisionEnter(Collision collision)
     {
-        isJumping = Physics2D.Linecast(transform.position,transform.position - transform.up * 0.001f,Ground);
+        if (collision.gameObject.tag == "Ground")
+        {
+            isJumping = false;
+        }
+        Debug.Log("run");
     }
-    //private void OnCollisionEnter(Collision collision)
-    //{
-    //    if (collision.gameObject.tag == "Ground")
-    //    {
-    //        isJumping = false;
-    //    }
-    //}
-    //private void OnCollisionExit(Collision collision)
-    //{
-    //    if(collision.gameObject.tag == "Ground")
-    //    {
-    //        isJumping = true;
-    //    }
-    //    Debug.Log(isJumping);
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.tag == "Ground")
+        {
+            //isJumping = true;
+        }
+        Debug.Log("jump");
 
-    //}
+    }
 }
