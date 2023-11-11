@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        DetectJump();
         if (Gender == 0)
         {
             if (Input.GetKeyDown(KeyCode.J))
@@ -37,6 +38,7 @@ public class PlayerController : MonoBehaviour
                 GirlJumps();
             }
         }
+        Debug.DrawLine(transform.position,transform.position - transform.up * 1,color:Color.white);
     }
     public void BoyJumps()
     {      
@@ -50,7 +52,7 @@ public class PlayerController : MonoBehaviour
     }
     void DetectJump()
     {
-        isJumping = Physics.Linecast(transform.position,transform.position - transform.up * 1,Ground);
+        isJumping = Physics2D.Linecast(transform.position,transform.position - transform.up * 0.001f,Ground);
     }
     //private void OnCollisionEnter(Collision collision)
     //{
