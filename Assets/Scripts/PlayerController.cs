@@ -62,7 +62,10 @@ public class PlayerController : MonoBehaviour
         {
             isJumping = false;
         }
-        Debug.Log("run");
+        if (collision.gameObject.tag == "Enemy")
+        {
+            Debug.Log("hit");
+        }
     }
     //private void OnCollisionExit(Collision collision)
     //{
