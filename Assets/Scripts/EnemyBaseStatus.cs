@@ -16,5 +16,10 @@ public class EnemyBaseStatus : MonoBehaviour
     void Update()
     {
         transform.position += new Vector3(-moveSpeed * Time.deltaTime, 0, 0);
+        Action();
+    }
+    void Action()
+    {
+
     }
 }
