@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8189652356672273639}
   - component: {fileID: 8189652356672273637}
   - component: {fileID: 8189652356672273636}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (2)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 8189652356704006349}
   - component: {fileID: 8189652356704006347}
   - component: {fileID: 8189652356704006346}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (23)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -203,7 +203,7 @@ GameObject:
   - component: {fileID: 8189652356829657733}
   - component: {fileID: 8189652356829657731}
   - component: {fileID: 8189652356829657730}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (11)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -299,7 +299,7 @@ GameObject:
   - component: {fileID: 8189652356995575723}
   - component: {fileID: 8189652356995575721}
   - component: {fileID: 8189652356995575720}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (12)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -395,7 +395,7 @@ GameObject:
   - component: {fileID: 8189652357030244779}
   - component: {fileID: 8189652357030244777}
   - component: {fileID: 8189652357030244776}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (9)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -491,7 +491,7 @@ GameObject:
   - component: {fileID: 8189652357165095790}
   - component: {fileID: 8189652357165095788}
   - component: {fileID: 8189652357165095791}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (15)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -587,7 +587,7 @@ GameObject:
   - component: {fileID: 8189652357280845990}
   - component: {fileID: 8189652357280845988}
   - component: {fileID: 8189652357280845991}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (14)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -683,7 +683,7 @@ GameObject:
   - component: {fileID: 8189652357336908984}
   - component: {fileID: 8189652357336908982}
   - component: {fileID: 8189652357336908985}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (21)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -779,7 +779,7 @@ GameObject:
   - component: {fileID: 8189652357476640589}
   - component: {fileID: 8189652357476640587}
   - component: {fileID: 8189652357476640586}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (4)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -875,7 +875,7 @@ GameObject:
   - component: {fileID: 8189652357668411912}
   - component: {fileID: 8189652357668411910}
   - component: {fileID: 8189652357668411913}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (16)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -971,7 +971,7 @@ GameObject:
   - component: {fileID: 8189652357772542566}
   - component: {fileID: 8189652357772542564}
   - component: {fileID: 8189652357772542567}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (18)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1067,7 +1067,7 @@ GameObject:
   - component: {fileID: 8189652357788769972}
   - component: {fileID: 8189652357788769975}
   - component: {fileID: 8189652357788769974}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (3)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1163,7 +1163,7 @@ GameObject:
   - component: {fileID: 8189652357870443354}
   - component: {fileID: 8189652357870443352}
   - component: {fileID: 8189652357870443355}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (17)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1259,7 +1259,7 @@ GameObject:
   - component: {fileID: 8189652358145332430}
   - component: {fileID: 8189652358145332428}
   - component: {fileID: 8189652358145332431}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (7)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1355,7 +1355,7 @@ GameObject:
   - component: {fileID: 8189652358199521740}
   - component: {fileID: 8189652358199521738}
   - component: {fileID: 8189652358199521741}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (20)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1451,7 +1451,7 @@ GameObject:
   - component: {fileID: 8189652358234184183}
   - component: {fileID: 8189652358234184181}
   - component: {fileID: 8189652358234184180}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (19)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1547,7 +1547,7 @@ GameObject:
   - component: {fileID: 8189652358294599605}
   - component: {fileID: 8189652358294599604}
   - component: {fileID: 8189652358294599607}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (1)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1643,7 +1643,7 @@ GameObject:
   - component: {fileID: 8189652358315949053}
   - component: {fileID: 8189652358315949051}
   - component: {fileID: 8189652358315949050}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (22)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1806,7 +1806,7 @@ GameObject:
   - component: {fileID: 8189652358554652343}
   - component: {fileID: 8189652358554652341}
   - component: {fileID: 8189652358554652340}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (6)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1902,7 +1902,7 @@ GameObject:
   - component: {fileID: 8189652358600169767}
   - component: {fileID: 8189652358600169765}
   - component: {fileID: 8189652358600169764}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (5)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1998,7 +1998,7 @@ GameObject:
   - component: {fileID: 8189652358742215365}
   - component: {fileID: 8189652358742215363}
   - component: {fileID: 8189652358742215362}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (10)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -2094,7 +2094,7 @@ GameObject:
   - component: {fileID: 8189652358767235218}
   - component: {fileID: 8189652358767235216}
   - component: {fileID: 8189652358767235219}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (13)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -2190,7 +2190,7 @@ GameObject:
   - component: {fileID: 8189652358767834260}
   - component: {fileID: 8189652358767834258}
   - component: {fileID: 8189652358767834261}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (8)
   m_TagString: Ground
   m_Icon: {fileID: 0}
