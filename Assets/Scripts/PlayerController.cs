@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] float Gender; 
     [SerializeField] float JumpPower;
+    [SerializeField] LayerMask Ground;
 
     Rigidbody rb;
 
@@ -36,25 +37,35 @@ public class PlayerController : MonoBehaviour
                 GirlJumps();
             }
         }
-       
     }
     public void BoyJumps()
     {      
         if (isJumping) return;
         rb.AddForce(Vector3.up * JumpPower, ForceMode.VelocityChange);
-        isJumping = true;
     }
    public void GirlJumps() 
     {
         if (isJumping) return;
         rb.AddForce(Vector3.up * JumpPower,ForceMode.VelocityChange);
-        isJumping = true;
     }
-    private void OnCollisionEnter(Collision collision)
+    void DetectJump()
     {
-        if (collision.gameObject.tag == "Ground")
-        {
-            isJumping = false;
-        }
+        isJumping = Physics.Linecast(transform.position,transform.position - transform.up * 1,Ground);
     }
+    //private void OnCollisionEnter(Collision collision)
+    //{
+    //    if (collision.gameObject.tag == "Ground")
+    //    {
+    //        isJumping = false;
+    //    }
+    //}
+    //private void OnCollisionExit(Collision collision)
+    //{
+    //    if(collision.gameObject.tag == "Ground")
+    //    {
+    //        isJumping = true;
+    //    }
+    //    Debug.Log(isJumping);
+
+    //}
 }
