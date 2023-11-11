@@ -12,7 +12,12 @@ public class PlayerController : MonoBehaviour
 
     Rigidbody rb;
 
-    private bool isJumping; 
+    private bool isJumping;
+
+    private int hp = 3;
+    public GameObject hp0;
+    public GameObject hp1;
+    public GameObject hp2;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +44,11 @@ public class PlayerController : MonoBehaviour
             }
         }
         //Debug.DrawLine(transform.position,transform.position - transform.up * 1,color:Color.white);
+
+
+        if (hp == 2) hp2.SetActive(false);
+        if (hp == 1) hp1.SetActive(false);
+        if (hp == 0) hp0.SetActive(false);
     }
     public void BoyJumps()
     {      
@@ -65,6 +75,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag == "Enemy")
         {
             Debug.Log("hit");
+            hp--; 
         }
     }
     //private void OnCollisionExit(Collision collision)
