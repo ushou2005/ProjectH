@@ -44,11 +44,13 @@ public class PlayerController : MonoBehaviour
     {      
         if (isJumping) return;
         rb.AddForce(Vector3.up * JumpPower, ForceMode.VelocityChange);
+        isJumping = true;
     }
    public void GirlJumps() 
     {
         if (isJumping) return;
         rb.AddForce(Vector3.up * JumpPower,ForceMode.VelocityChange);
+        isJumping = true;
     }
     //void DetectJump()
     //{
@@ -62,13 +64,16 @@ public class PlayerController : MonoBehaviour
         }
         Debug.Log("run");
     }
-    private void OnCollisionExit(Collision collision)
-    {
-        if (collision.gameObject.tag == "Ground")
-        {
-            //isJumping = true;
-        }
-        Debug.Log("jump");
-
-    }
+    //private void OnCollisionExit(Collision collision)
+    //{
+    //    if (collision.gameObject.tag == "Ground")
+    //    {
+    //        Invoke("JumpSafety", 0.1f);
+    //    }
+    //    Debug.Log("jump");
+    //}
+    //void JumpSafety()
+    //{
+    //    isJumping = true;
+    //}
 }
