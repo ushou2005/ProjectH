@@ -16,7 +16,6 @@ public class StageGenerate : MonoBehaviour
     {
         for (int i = 0; i < array.Length; i++)
         {
-            Debug.Log(i);
             GeneratePos.x += 18.2f;
             if (array[i] == 0)
             {
