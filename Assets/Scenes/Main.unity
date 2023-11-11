@@ -1152,6 +1152,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Gender: 0
   JumpPower: 5
+  Ground:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!95 &947303659
 Animator:
   serializedVersion: 3
@@ -1624,6 +1627,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Gender: 1
   JumpPower: 5
+  Ground:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!95 &1624845623
 Animator:
   serializedVersion: 3
