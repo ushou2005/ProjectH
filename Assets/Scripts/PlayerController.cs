@@ -13,7 +13,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] GameObject boy;
     [SerializeField] GameObject girl;
 
-    Rigidbody rb;
+    Rigidbody boyRb;
+    Rigidbody girlRb;
 
     private bool isJumping;
 
@@ -25,7 +26,8 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         //if (Gender >= 3) return;
-        rb = GetComponent<Rigidbody>();
+        boyRb = GetComponent<Rigidbody>();
+        girlRb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -49,14 +51,14 @@ public class PlayerController : MonoBehaviour
     public void BoyJumps()
     {      
         if (isJumping) return;
-        rb.AddForce(Vector3.up * JumpPower, ForceMode.VelocityChange);
+        boyRb.AddForce(Vector3.up * JumpPower, ForceMode.VelocityChange);
         isJumping = true;
         Debug.Log("BoyJumps");
     }
     public void GirlJumps() 
     {
         if (isJumping) return;
-        rb.AddForce(Vector3.up * JumpPower,ForceMode.VelocityChange);
+        girlRb.AddForce(Vector3.up * JumpPower,ForceMode.VelocityChange);
         isJumping = true;
         Debug.Log("GirlJumps");
     }
