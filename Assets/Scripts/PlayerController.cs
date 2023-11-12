@@ -6,9 +6,12 @@ using UnityEngine.Analytics;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] float Gender; 
+    //[SerializeField] float Gender; 
     [SerializeField] float JumpPower;
     [SerializeField] LayerMask Ground;
+
+    [SerializeField] GameObject boy;
+    [SerializeField] GameObject girl;
 
     Rigidbody rb;
 
@@ -21,7 +24,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (Gender >= 3) return;
+        //if (Gender >= 3) return;
         rb = GetComponent<Rigidbody>();
     }
 
@@ -29,22 +32,15 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         //DetectJump();
-        if (Gender == 0)
+       if (Input.GetKeyDown(KeyCode.J))
         {
-            if (Input.GetKeyDown(KeyCode.J))
-            {
-                BoyJumps();
-            }
+            BoyJumps();
         }
-        if (Gender == 1)
+        if (Input.GetKeyDown(KeyCode.F))
         {
-            if (Input.GetKeyDown(KeyCode.F))
-            {
-                GirlJumps();
-            }
+            GirlJumps();
         }
         //Debug.DrawLine(transform.position,transform.position - transform.up * 1,color:Color.white);
-
 
         if (hp == 2) hp2.SetActive(false);
         if (hp == 1) hp1.SetActive(false);
@@ -55,12 +51,14 @@ public class PlayerController : MonoBehaviour
         if (isJumping) return;
         rb.AddForce(Vector3.up * JumpPower, ForceMode.VelocityChange);
         isJumping = true;
+        Debug.Log("BoyJumps");
     }
-   public void GirlJumps() 
+    public void GirlJumps() 
     {
         if (isJumping) return;
         rb.AddForce(Vector3.up * JumpPower,ForceMode.VelocityChange);
         isJumping = true;
+        Debug.Log("GirlJumps");
     }
     //void DetectJump()
     //{
