@@ -13,8 +13,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] GameObject boy;
     [SerializeField] GameObject girl;
 
-    Rigidbody boyRb;
-    Rigidbody girlRb;
+    Rigidbody rb;
 
     private bool isJumping;
 
@@ -26,21 +25,26 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         //if (Gender >= 3) return;
-        boyRb = GetComponent<Rigidbody>();
-        girlRb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
         //DetectJump();
-       if (Input.GetKeyDown(KeyCode.J))
+        if (boy)
         {
-            BoyJumps();
+            if (Input.GetKeyDown(KeyCode.J))
+            {
+                BoyJumps();
+            }
         }
-        if (Input.GetKeyDown(KeyCode.F))
+        if (girl)
         {
-            GirlJumps();
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                GirlJumps();
+            }
         }
         //Debug.DrawLine(transform.position,transform.position - transform.up * 1,color:Color.white);
 
@@ -51,16 +55,14 @@ public class PlayerController : MonoBehaviour
     public void BoyJumps()
     {      
         if (isJumping) return;
-        boyRb.AddForce(Vector3.up * JumpPower, ForceMode.VelocityChange);
+        rb.AddForce(Vector3.up * JumpPower, ForceMode.VelocityChange);
         isJumping = true;
-        Debug.Log("BoyJumps");
     }
     public void GirlJumps() 
     {
         if (isJumping) return;
-        girlRb.AddForce(Vector3.up * JumpPower,ForceMode.VelocityChange);
+        rb.AddForce(Vector3.up * JumpPower,ForceMode.VelocityChange);
         isJumping = true;
-        Debug.Log("GirlJumps");
     }
     //void DetectJump()
     //{
