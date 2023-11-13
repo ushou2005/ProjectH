@@ -76,7 +76,6 @@ public class PlayerController : MonoBehaviour
         }
         if (collision.gameObject.tag == "Enemy")
         {
-            Debug.Log("hit");
             hp--; 
         }
     }
