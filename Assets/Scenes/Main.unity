@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 69116546}
   - component: {fileID: 69116548}
   - component: {fileID: 69116547}
+  - component: {fileID: 69116549}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -157,7 +158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -1.5}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1230, y: -160}
+  m_AnchoredPosition: {x: 1215.2, y: -174.7}
   m_SizeDelta: {x: 100, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &69116547
@@ -202,6 +203,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 69116545}
   m_CullTransparentMesh: 1
+--- !u!114 &69116549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 69116545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41ab85476a9ffc743b9f7f981c911dd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScrollSpeed: 385
 --- !u!1 &139206293
 GameObject:
   m_ObjectHideFlags: 0
@@ -1841,6 +1855,7 @@ GameObject:
   - component: {fileID: 1037463417}
   - component: {fileID: 1037463416}
   - component: {fileID: 1037463415}
+  - component: {fileID: 1037463418}
   m_Layer: 5
   m_Name: remainingDistance
   m_TagString: Untagged
@@ -1864,7 +1879,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -1.5}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1166, y: -190}
+  m_AnchoredPosition: {x: 1151.2, y: -204.69997}
   m_SizeDelta: {x: 100, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1037463415
@@ -1923,6 +1938,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1037463413}
   m_CullTransparentMesh: 1
+--- !u!114 &1037463418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037463413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41ab85476a9ffc743b9f7f981c911dd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScrollSpeed: 390
 --- !u!1 &1122056478
 GameObject:
   m_ObjectHideFlags: 0
@@ -2051,7 +2079,6 @@ MonoBehaviour:
   Ground: {fileID: 8189652358537604837, guid: be568180626c4924eaa2e34b8958899d, type: 3}
   Hole: {fileID: 7962617723867408, guid: cbdb7ea8b9c0f474093a0bb68079d2a5, type: 3}
   Hole2: {fileID: 8844464580363852385, guid: d6086fe30d815a6438d09a7e2e4b701b, type: 3}
-  SignBoard: {fileID: 8446234713910999991, guid: d2bebc94185944656a4533d6f58bd55f, type: 3}
   GeneratePos: {x: -8.1, y: -3.1, z: -3}
   array: 000000000000000000000000010000000000000000000000020000000100000000000000000000000100000001000000
 --- !u!4 &1484681471
@@ -2114,7 +2141,6 @@ MonoBehaviour:
   Ground: {fileID: 8189652358537604837, guid: be568180626c4924eaa2e34b8958899d, type: 3}
   Hole: {fileID: 7962617723867408, guid: cbdb7ea8b9c0f474093a0bb68079d2a5, type: 3}
   Hole2: {fileID: 8844464580363852385, guid: d6086fe30d815a6438d09a7e2e4b701b, type: 3}
-  SignBoard: {fileID: 0}
   GeneratePos: {x: -8.1, y: 2.29, z: 0}
   array: 0000000000000000000000000100000000000000010000000100000000000000000000000200000000000000010000000000000000000000
 --- !u!1 &1564346853
