@@ -7,6 +7,7 @@ public class StageGenerate : MonoBehaviour
     [SerializeField] GameObject Ground;
     [SerializeField] GameObject Hole;
     [SerializeField] GameObject Hole2;
+    [SerializeField] GameObject SignBoard;
 
     [SerializeField] Vector3 GeneratePos;
 
@@ -34,11 +35,17 @@ public class StageGenerate : MonoBehaviour
                 break;
             }
         }
+
+        InvokeRepeating("SignBoardGenerate", 5f, 10f);
     }
 
     // Update is called once per frame
     void Update()
     {
 
+    }
+    void SignBoardGenerate()
+    {
+        Instantiate(SignBoard, GeneratePos, Quaternion.identity);
     }
 }
