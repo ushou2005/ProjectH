@@ -4,8 +4,6 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Boy
-  - Girl
   - Ground
   - Enemy
   layers:
@@ -15,10 +13,10 @@ TagManager:
   - 
   - Water
   - UI
-  - Ground
-  - Enemy
   - Player
+  - Enemy
   - 
+  - Ground
   - 
   - 
   - 
