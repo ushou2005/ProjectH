@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] GameObject boy;
     [SerializeField] GameObject girl;
+    
+
 
     Rigidbody rb;
 
@@ -64,6 +66,10 @@ public class PlayerController : MonoBehaviour
         rb.AddForce(Vector3.up * JumpPower,ForceMode.VelocityChange);
         isJumping = true;
     }
+    void CoolTime()
+    {
+
+    }
     //void DetectJump()
     //{
     //    isJumping = Physics2D.Linecast(transform.position,transform.position - transform.up * 0.001f,Ground);
@@ -76,7 +82,8 @@ public class PlayerController : MonoBehaviour
         }
         if (collision.gameObject.tag == "Enemy")
         {
-            hp--; 
+            hp--;
+            
         }
     }
     //private void OnCollisionExit(Collision collision)
